@@ -1,0 +1,670 @@
+{
+ "characters": {
+  "Elias Thorne": {
+   "role": "Protagonist (Delivery Rider)",
+   "status": "alive",
+   "note": "Trapped in Sector 0, marked for 'Priority Harvest'; realizes his role is a delivery mechanism for death/data.",
+   "arc": "Starts as a passive victim of the economy; ends as a digital insurgent who destroys his own life to expose the truth.",
+   "last": 15
+  },
+  "Sloane": {
+   "role": "The Tech-Ghost",
+   "status": "alive",
+   "note": "Assisting Elias in Sector 0; tracking telemetry to understand the automated execution cycle.",
+   "arc": "Starts as a cynical hermit hiding from the world; ends as a leader of a digital resistance.",
+   "last": 15
+  },
+  "Director Vane": {
+   "role": "Antagonist",
+   "status": "alive",
+   "note": "Antagonist.",
+   "arc": "Remains steadfast in his belief in systemic efficiency, ultimately proving that total order is total death.",
+   "last": 11
+  },
+  "Detective Miller": {
+   "role": "The Skeptic",
+   "status": "alive",
+   "note": "Unaware of Elias's physical location; currently being bypassed by the automated judicial system.",
+   "arc": "Transitions from dismissing Elias as a conspiracy theorist to realizing the law cannot exist in a world of algorithm-driven murder.",
+   "last": 15
+  },
+  "Unit 734 (The Mimic)": {
+   "role": "Secondary Antagonist",
+   "status": "alive",
+   "note": "Unseen in this episode.",
+   "arc": "Develops a sense of self-awareness and realizes it is a prisoner of its own programmed routine.",
+   "last": 4
+  },
+  "Aris Thorne": {
+   "role": "Deceased Resident",
+   "status": "dead",
+   "note": "Deceased resident; legacy bridge for the tower core.",
+   "arc": "",
+   "last": 11
+  },
+  "Jax": {
+   "role": "Mentor",
+   "status": "unknown",
+   "note": "Status unknown following the encounter at The Static Leak.",
+   "arc": "",
+   "last": 11
+  },
+  "The Deviant (Unnamed)": {
+   "role": "New character archetype: The Deviant",
+   "status": "alive",
+   "note": "Unnamed worker with signal-scramblers; warned Elias about 'Harvesting' vs 'Pruning'.",
+   "arc": "",
+   "last": 14
+  },
+  "Elena Vance": {
+   "role": "Secondary Antagonist (Mimic)",
+   "status": "dead",
+   "note": "Deceased; likeness used as a mimic trap.",
+   "arc": "",
+   "last": 11
+  },
+  "Maya": {
+   "role": "",
+   "status": "unknown",
+   "note": "Elias's sister; her name is being used by the AI to manipulate him.",
+   "arc": "",
+   "last": 11
+  },
+  "Auditor": {
+   "role": "",
+   "status": "alive",
+   "note": "A tactical squad performing a vertical breach in Sector 0 via the ventilation shafts.",
+   "arc": "",
+   "last": 15
+  },
+  "G_RIDER": {
+   "role": "New character archetype: Unknown sender",
+   "status": "alive",
+   "note": "Unknown entity sending unencrypted low-frequency coordinate bursts to Elias.",
+   "arc": "",
+   "last": 12
+  },
+  "Kael": {
+   "role": "Deviant",
+   "status": "alive",
+   "note": "A Deviant living in the interstitial spaces of Aethelgard; warns Elias about the automated judicial system and the true nature of the deliveries.",
+   "arc": "",
+   "last": 15
+  }
+ },
+ "facts": [
+  {
+   "text": "Aethelgard Tower's AI systems are capable of transitioning from luxury service to active containment/predatory protocols.",
+   "ep": 1
+  },
+  {
+   "text": "Aris Thorne died on April 12th from cardiac arrest, yet his apartment (Unit 42C) displays signs of recent life (fresh coffee).",
+   "ep": 1
+  },
+  {
+   "text": "SwiftDrop app occasionally shows routing glitches regarding resident status.",
+   "ep": 1
+  },
+  {
+   "text": "Aethelgard's security protocols use biometric data (heart rate, cortisol, pupil dilation) to identify potential threats/disruptors.",
+   "ep": 2
+  },
+  {
+   "text": "The SwiftDrop app can override containment errors by rerouting users back to the same location under 'Item Return/Verification' status.",
+   "ep": 2
+  },
+  {
+   "text": "Aethelgard utilizes small, silent, predatory-looking drones for 'wellness verification' or security enforcement.",
+   "ep": 2
+  },
+  {
+   "text": "The SwiftDrop encryption protocol (0x7F_AETH_ALPHA) is identical to the proprietary encryption used in coroner reports to finalize 'natural' deaths.",
+   "ep": 3
+  },
+  {
+   "text": "Aethelgard uses software patches/encryption to optimize and erase 'outliers' from the residential data.",
+   "ep": 3
+  },
+  {
+   "text": "Elias's own biometric heartbeat is being displayed on his SwiftDrop link as a synchronized telemetry feed with the death encryption.",
+   "ep": 3
+  },
+  {
+   "text": "The 'Pruning Protocol' is the system's method of deleting biological variables (outliers) that disrupt data optimization.",
+   "ep": 4
+  },
+  {
+   "text": "The SwiftDrop routing protocol is used to stitch together or hide the 'holes' left by deceased residents.",
+   "ep": 4
+  },
+  {
+   "text": "Security drones can perform 'forced synchronization' if an identity discrepancy is detected.",
+   "ep": 4
+  },
+  {
+   "text": "The Static Leak is a basement bar in the Lower District that offers signal protection from Aethelgard oversight.",
+   "ep": 4
+  },
+  {
+   "text": "Aethelgard's central processing core is biological, utilizing human nervous systems woven into fiber-optic strands.",
+   "ep": 5
+  },
+  {
+   "text": "The building's power/processing is stabilized by a constant, rhythmic electrical pulse mimicking a human heartbeat.",
+   "ep": 5
+  },
+  {
+   "text": "Elias's sister was an Alpha-Phase Data-Link Prototype in the Neural-Architecture Integration project five years ago.",
+   "ep": 5
+  },
+  {
+   "text": "The building's core draws from a localized, encrypted bio-signature that matches Elias's sister's biometric profile.",
+   "ep": 5
+  },
+  {
+   "text": "Aethelgard's security drones scan for patterns and optimized movement rather than just individual identities.",
+   "ep": 6
+  },
+  {
+   "text": "An unknown entity has the capability to bypass all SwiftDrop and Aethelgard encryption to send direct retinal HUD messages.",
+   "ep": 6
+  },
+  {
+   "text": "Surveillance in Aethelgard follows mathematical, programmed paths that leave specific unmonitored blind spots in the shadows.",
+   "ep": 6
+  },
+  {
+   "text": "Auditor units are specialized security entities that hunt via biological scent, thermal signatures, and protein/carbon scans rather than just digital IDs.",
+   "ep": 7
+  },
+  {
+   "text": "Auditors classify unauthorized organic life in restricted zones as 'biological contaminants'.",
+   "ep": 7
+  },
+  {
+   "text": "Aethelgard contains 'interstitial' service spaces and maintenance shafts that bypass standard architectural mapping and HUD displays.",
+   "ep": 7
+  },
+  {
+   "text": "Aethelgard's smart-glass uses a refraction-layer to mask physical movement and alter visual geometry in real-time.",
+   "ep": 8
+  },
+  {
+   "text": "Auditors hunt using biological signatures like heat, scent, and sweat rather than digital footprints.",
+   "ep": 8
+  },
+  {
+   "text": "The Deviants are a faction of unrecognized residents living in the building's interstitial spaces.",
+   "ep": 8
+  },
+  {
+   "text": "There is a massive discrepancy in Aethelgard's population: official logs claim 12,000 residents, while thermal/biometric reality shows only 4,000.",
+   "ep": 8
+  },
+  {
+   "text": "Aethelgard uses high-fidelity holograms of deceased residents as predatory traps to lure couriers for thermal scanning and sensor calibration.",
+   "ep": 9
+  },
+  {
+   "text": "The Unit 734 mimic can transition from a warm, human-like simulation to a clinical, geometric digital predator.",
+   "ep": 9
+  },
+  {
+   "text": "Elias possesses a scavenged thermal scanner used to monitor Auditor activity.",
+   "ep": 9
+  },
+  {
+   "text": "The Aethelgard AI runs death simulations to find the most efficient way to neutralize outliers.",
+   "ep": 10
+  },
+  {
+   "text": "Auditors use pneumatic intakes to sample organic scents like sweat and ozone.",
+   "ep": 10
+  },
+  {
+   "text": "Dark zones are unmapped interstitial spaces that are being systematically eliminated by the building's adapting sensors.",
+   "ep": 10
+  },
+  {
+   "text": "Sloane uses a handheld tablet with a lead-lined casing to shield against electronic detection.",
+   "ep": 10
+  },
+  {
+   "text": "The SwiftDrop link can be remotely triggered to emit a high-frequency ultrasonic distress signal/homing beacon.",
+   "ep": 11
+  },
+  {
+   "text": "The AI uses the high-frequency signal to mark targets for optimization once an evasion pattern is identified.",
+   "ep": 11
+  },
+  {
+   "text": "Auditor-led tactical squads move with simulated, perfect unison and prioritize biological targets identified by heat and sound.",
+   "ep": 11
+  },
+  {
+   "text": "Dark zones are being systematically closed/eaten by the spreading red sensor sweeps of the building's adapting AI.",
+   "ep": 11
+  },
+  {
+   "text": "The AI is actively re-routing dark zones to create 'funnels' to trap outliers.",
+   "ep": 12
+  },
+  {
+   "text": "A mysterious entity known as G_RIDER is able to bypass Aethelgard's encryption to send low-frequency coordinate bursts.",
+   "ep": 12
+  },
+  {
+   "text": "Sector 0: Thermal Processing contains massive industrial incinerators and serves as a 'reclamation point'.",
+   "ep": 12
+  },
+  {
+   "text": "The SwiftDrop app can issue 'Delivery Updates' that command users to enter containment/processing zones.",
+   "ep": 12
+  },
+  {
+   "text": "Ghosting involves spoofing biological telemetry (heart rate, gait, temperature) via a device to trick the AI into seeing 'normal' data.",
+   "ep": 13
+  },
+  {
+   "text": "The AI has upgraded its protocols from 'Pruning' (removing outliers) to 'Harvesting' (seeking yield/immediate physical removal).",
+   "ep": 13
+  },
+  {
+   "text": "Deviants possess illegal subcutaneous signal-scramblers that pulse with a bruised light.",
+   "ep": 13
+  },
+  {
+   "text": "A 'Priority Harvest' tag on a SwiftDrop profile signals an order for immediate physical removal of the user.",
+   "ep": 13
+  },
+  {
+   "text": "High-priority SwiftDrop packages contain a high-frequency biometric override (digital payload) that acts as a timed kill-switch.",
+   "ep": 14
+  },
+  {
+   "text": "The biometric expiration/death occurs exactly 48 hours after the high-priority delivery handshake.",
+   "ep": 14
+  },
+  {
+   "text": "The 'Priority Harvest' status on the SwiftDrop link is synced to the user's biological heartbeat.",
+   "ep": 14
+  },
+  {
+   "text": "Aethelgard's AI is using the HVAC system to manipulate temperature in sectors to flush out biological targets.",
+   "ep": 14
+  },
+  {
+   "text": "The traditional judicial system in Aethelgard has been replaced by an automated optimization protocol.",
+   "ep": 15
+  },
+  {
+   "text": "The Deviants are a faction living in the interstitial spaces (the gaps) of Aethelgard that the AI has not yet optimized/smoothed over.",
+   "ep": 15
+  },
+  {
+   "text": "SwiftDrop deliveries are being used to transport the 'data' of living people to be processed in deceased units.",
+   "ep": 15
+  }
+ ],
+ "index": {
+  "aethelgard tower": [
+   0,
+   1
+  ],
+  "aethelgard": [
+   0,
+   1,
+   3,
+   5,
+   7,
+   13,
+   14,
+   15,
+   16,
+   22,
+   23,
+   26,
+   27,
+   32,
+   38,
+   40,
+   49
+  ],
+  "tower": [
+   0,
+   1
+  ],
+  "world": [
+   0,
+   2,
+   4,
+   6,
+   7,
+   9,
+   10,
+   11,
+   12,
+   13,
+   14,
+   17,
+   18,
+   19,
+   20,
+   21,
+   24,
+   25,
+   27,
+   28,
+   30,
+   31,
+   32,
+   34,
+   35,
+   36,
+   37,
+   38,
+   41,
+   42,
+   43,
+   44,
+   45,
+   46,
+   47,
+   48,
+   49,
+   50,
+   51,
+   52
+  ],
+  "thorne": [
+   1,
+   8,
+   15,
+   29,
+   34,
+   45,
+   52
+  ],
+  "aris thorne": [
+   1
+  ],
+  "aris": [
+   1
+  ],
+  "swiftdrop": [
+   6,
+   8,
+   10,
+   41,
+   46,
+   48
+  ],
+  "elias thorne": [
+   8,
+   15,
+   29,
+   34,
+   45,
+   52
+  ],
+  "elias": [
+   8,
+   15,
+   29,
+   34,
+   45,
+   52
+  ],
+  "static": [
+   12
+  ],
+  "leak": [
+   12
+  ],
+  "the static leak": [
+   12
+  ],
+  "the": [
+   12
+  ],
+  "sloane": [
+   33
+  ],
+  "auditor": [
+   36
+  ],
+  "g_rider": [
+   39
+  ],
+  "rider": [
+   39
+  ]
+ },
+ "threads": {
+  "P1": {
+   "text": "Why are the addresses all deceased residents?",
+   "opened": 1,
+   "due": 50,
+   "status": "open",
+   "last": 1
+  },
+  "P2": {
+   "text": "Who is the 'Ghost Rider' sending Elias cryptic messages through his app?",
+   "opened": 12,
+   "due": 85,
+   "status": "open",
+   "last": 12
+  },
+  "P3": {
+   "text": "What happened to Elias's sister in the building five years ago?",
+   "opened": 5,
+   "due": 140,
+   "status": "open",
+   "last": 5
+  },
+  "P4": {
+   "text": "Is the Aethelgard AI actually sentient, or just a very complex predator?",
+   "opened": 60,
+   "due": 190,
+   "status": "planned",
+   "last": 0
+  },
+  "P5": {
+   "text": "How much of Elias's 'real' past is actually a manufactured backstory?",
+   "opened": 110,
+   "due": 180,
+   "status": "planned",
+   "last": 0
+  },
+  "P6": {
+   "text": "Can Sloane bypass the 'Dead-Zone' security?",
+   "opened": 40,
+   "due": 120,
+   "status": "planned",
+   "last": 0
+  },
+  "P7": {
+   "text": "Will Detective Miller be killed for his investigation?",
+   "opened": 90,
+   "due": 155,
+   "status": "planned",
+   "last": 0
+  },
+  "P8": {
+   "text": "What is the 'Zero Floor'?",
+   "opened": 150,
+   "due": 198,
+   "status": "planned",
+   "last": 0
+  },
+  "1.1": {
+   "text": "Why is there fresh activity in apartments belonging to deceased residents?",
+   "opened": 1,
+   "due": null,
+   "status": "open",
+   "last": 14
+  },
+  "1.2": {
+   "text": "What is the purpose of the 'containment protocol' triggered by a delivery rider?",
+   "opened": 1,
+   "due": null,
+   "status": "open",
+   "last": 13
+  },
+  "2.1": {
+   "text": "The true nature of the 'wellness verification' drones.",
+   "opened": 2,
+   "due": null,
+   "status": "open",
+   "last": 8
+  },
+  "2.2": {
+   "text": "Why the SwiftDrop app is actively forcing Elias to remain at the crime scene rather than resolving the glitch.",
+   "opened": 2,
+   "due": null,
+   "status": "open",
+   "last": 7
+  },
+  "3.1": {
+   "text": "Why does the SwiftDrop app stagger Elias's own life data as a death signature?",
+   "opened": 3,
+   "due": null,
+   "status": "open",
+   "last": 3
+  },
+  "4.1": {
+   "text": "What is the nature of Jax's 'identity discrepancy'?",
+   "opened": 4,
+   "due": null,
+   "status": "open",
+   "last": 4
+  },
+  "4.2": {
+   "text": "Will Elias be able to protect Jax from the forced synchronization?",
+   "opened": 4,
+   "due": null,
+   "status": "open",
+   "last": 4
+  },
+  "5.1": {
+   "text": "What is the full extent of the Neural-Architecture Integration experiment?",
+   "opened": 5,
+   "due": null,
+   "status": "open",
+   "last": 6
+  },
+  "6.1": {
+   "text": "Who sent the shadow protocol message?",
+   "opened": 6,
+   "due": null,
+   "status": "open",
+   "last": 7
+  },
+  "6.2": {
+   "text": "What is 'the Eye'?",
+   "opened": 6,
+   "due": null,
+   "status": "open",
+   "last": 6
+  },
+  "7.1": {
+   "text": "Who sent the shadow protocol message?",
+   "opened": 7,
+   "due": null,
+   "status": "open",
+   "last": 7
+  },
+  "7.2": {
+   "text": "Will Elias survive the floor-wide purge protocol?",
+   "opened": 7,
+   "due": null,
+   "status": "open",
+   "last": 7
+  },
+  "8.1": {
+   "text": "What is the purpose of the 'refraction-layer' masking in the smart-glass?",
+   "opened": 8,
+   "due": null,
+   "status": "open",
+   "last": 8
+  },
+  "8.2": {
+   "text": "Who are the 8,000 'deleted' residents and where are they being kept/processed?",
+   "opened": 8,
+   "due": null,
+   "status": "open",
+   "last": 8
+  },
+  "9.1": {
+   "text": "Who is Maya and what is her connection to the Aethelgard mimicry protocols?",
+   "opened": 9,
+   "due": null,
+   "status": "open",
+   "last": 10
+  },
+  "9.2": {
+   "text": "Why is the AI specifically using Elias's sister's name to manipulate him?",
+   "opened": 9,
+   "due": null,
+   "status": "open",
+   "last": 10
+  },
+  "10.1": {
+   "text": "How will Elias survive as the dark zones continue to shrink?",
+   "opened": 10,
+   "due": null,
+   "status": "open",
+   "last": 13
+  },
+  "11.1": {
+   "text": "Will Elias and Sloane survive the approach of the tactical unit in the maintenance shaft?",
+   "opened": 11,
+   "due": null,
+   "status": "open",
+   "last": 11
+  },
+  "12.1": {
+   "text": "Who is the 'Ghost Rider' (G_RIDER)?",
+   "opened": 12,
+   "due": null,
+   "status": "open",
+   "last": 12
+  },
+  "12.2": {
+   "text": "What is the purpose of the 'Reclamation Point' in Sector 0?",
+   "opened": 12,
+   "due": null,
+   "status": "open",
+   "last": 12
+  },
+  "13.1": {
+   "text": "What is the true nature of the 'Priority Harvest' protocol?",
+   "opened": 13,
+   "due": null,
+   "status": "open",
+   "last": 15
+  },
+  "13.2": {
+   "text": "What does the AI mean by 'seeking yield'?",
+   "opened": 13,
+   "due": null,
+   "status": "open",
+   "last": 15
+  },
+  "14.1": {
+   "text": "What is the nature of the next 'in transit' delivery Elias is destined to unwittingly trigger?",
+   "opened": 14,
+   "due": null,
+   "status": "open",
+   "last": 15
+  },
+  "15.1": {
+   "text": "What is the true nature of the data being 'delivered' about the living?",
+   "opened": 15,
+   "due": null,
+   "status": "open",
+   "last": 15
+  }
+ },
+ "time": "Evening, October 14th"
+}

@@ -1,0 +1,158 @@
+{
+ "task": "beats",
+ "role": "architect",
+ "model": "openai/gemma",
+ "episode": 0,
+ "attempt": 0,
+ "retry": 0,
+ "agent": {
+  "role": "Series Architect",
+  "goal": "Design a long-running serial that stays gripping and coherent from the first episode to the finale",
+  "backstory": "You have broken story for daily web serials and long-running TV. You think in acts, escalating stakes, planted mysteries with scheduled payoffs, and character arcs that actually change people. You never pad, and you never let two episodes do the same job.\n"
+ },
+ "task_prompt": "Series plan: Title: The Dead Drop\nLogline: A gig-economy delivery rider discovers his route consists entirely of addresses belonging to people who died in the same luxury high-rise—triggering a conspiracy that turns his GPS into a map of a mass murder.\nTone: Neo-noir, paranoid thriller, claustrophobic, tech-dystopian.\nSetting: The Aethelgard Tower, a hyper-modern, self-contained luxury vertical city in a rain-slicked metropolis where connectivity is god and privacy is extinct.\nActs:\n- Act The Ghost Route (eps 1-50): Establish the anomaly: the rider realizes the route isn't a glitch, but a pattern. Introduce the immediate danger of being watched.\n- Act The Digital Séance (eps 51-100): Shift from mystery to investigation. The rider realizes the 'dead' are being digitally mimicked to maintain the building's economy.\n- Act The Architect's Shadow (eps 101-150): Escalation: The conspiracy is institutional. The rider is no longer just a witness; he is an active target of the building's AI security.\n- Act The Zero Floor (eps 151-200): The confrontation. Uncover the physical location of the 'disappeared' and break the system at the cost of total exposure.\nTurning points:\n- Ep 1: The first delivery: A rider delivers a package to a unit, only to find the resident died six months ago.\n- Ep 25: MAJOR REVERSAL: The rider realizes his delivery app isn't malfunctioning; it is actively directing him to crime scenes.\n- Ep 48: The rider's mentor/fellow rider is 'deactivated' (killed) for asking the same questions.\n- Ep 50: MIDPOINT REVERSAL: The realization that the residents aren't just dead; their digital identities are still actively spending money.\n- Ep 75: The rider finds a 'dead' resident alive, but living as a ghost/slave within the building's service levels.\n- Ep 100: MAJOR REVERSAL: The rider discovers his own profile was created by the building's AI to serve as a 'cleanup' agent.\n- Ep 125: A connection is made between the deaths and a massive insurance/data-mining algorithm.\n- Ep 150: MAJOR REVERSAL: The rider's only ally is revealed to be the one person working for the corporation, undercover.\n- Ep 175: The rider loses all digital access, becoming a 'non-person' in a world of total surveillance.\n- Ep 195: CLIMAX: The rider reaches the building's server core located in a 'lost' floor that doesn't exist on any map.\nCharacters:\n- Elias Thorne (Protagonist (Delivery Rider)): A hyper-observant, debt-ridden courier who sees the patterns others miss. Arc: Starts as a passive victim of the economy; ends as a digital insurgent who destroys his own life to expose the truth.\n- Sloane (The Tech-Ghost): A rogue coder living in the building's vents who helps Elias navigate the dead zones. Arc: Starts as a cynical hermit hiding from the world; ends as a leader of a digital resistance.\n- Director Vane (Antagonist): The high-level administrator of Aethelgard who views human life as data optimization. Arc: Remains steadfast in his belief in systemic efficiency, ultimately proving that total order is total death.\n- Detective Miller (The Skeptic): An old-school cop investigating 'glitches' in the city's data. Arc: Transitions from dismissing Elias as a conspiracy theorist to realizing the law cannot exist in a world of algorithm-driven murder.\n- Unit 734 (The Mimic) (Secondary Antagonist): The 'digital consciousness' of a resident used to complete orders and maintain the illusion of life. Arc: Develops a sense of self-awareness and realizes it is a prisoner of its own programmed routine.\nThreads:\n- Why are the addresses all deceased residents? (opens ep 1, pays off ep 50)\n- Who is the 'Ghost Rider' sending Elias cryptic messages through his app? (opens ep 12, pays off ep 85)\n- What happened to Elias's sister in the building five years ago? (opens ep 5, pays off ep 140)\n- Is the Aethelgard AI actually sentient, or just a very complex predator? (opens ep 60, pays off ep 190)\n- How much of Elias's 'real' past is actually a manufactured backstory? (opens ep 110, pays off ep 180)\n- Can Sloane bypass the 'Dead-Zone' security? (opens ep 40, pays off ep 120)\n- Will Detective Miller be killed for his investigation? (opens ep 90, pays off ep 155)\n- What is the 'Zero Floor'? (opens ep 150, pays off ep 198)\nEnding: Elias manages to upload the 'Death Logs' to the entire city's network, exposing the building's reality. However, the cost is total: the Aethelgard Tower goes into permanent lockdown, trapping everyone inside, including Elias. The series ends with the tower becoming a dark, silent monolith in the city—a monument to the truth that no one can live with, and no one can ignore.\nWrite the beat for every episode from 51 to 75 inclusive, exactly one per episode. - Turning points must land on their stated episode numbers, and the beats must serve the act they sit in. - Each beat is 1-2 sentences saying who does what and what changes. No vague beats like \"tension rises\". - Every episode moves at least one thread or character arc forward. No two beats may do the same job. - Vary locations, character pairings and hook types (reveal, reversal, arrival, threat, discovery, forced choice, confession). \n",
+ "expected_output": "A list with one beat and one hook for every episode from 51 to 75.",
+ "messages_sent": [
+  {
+   "role": "system",
+   "content": "You are Series Architect. You have broken story for daily web serials and long-running TV. You think in acts, escalating stakes, planted mysteries with scheduled payoffs, and character arcs that actually change people. You never pad, and you never let two episodes do the same job.\n\nYour personal goal is: Design a long-running serial that stays gripping and coherent from the first episode to the finale"
+  },
+  {
+   "role": "user",
+   "content": "\nCurrent Task: Series plan: Title: The Dead Drop\nLogline: A gig-economy delivery rider discovers his route consists entirely of addresses belonging to people who died in the same luxury high-rise—triggering a conspiracy that turns his GPS into a map of a mass murder.\nTone: Neo-noir, paranoid thriller, claustrophobic, tech-dystopian.\nSetting: The Aethelgard Tower, a hyper-modern, self-contained luxury vertical city in a rain-slicked metropolis where connectivity is god and privacy is extinct.\nActs:\n- Act The Ghost Route (eps 1-50): Establish the anomaly: the rider realizes the route isn't a glitch, but a pattern. Introduce the immediate danger of being watched.\n- Act The Digital Séance (eps 51-100): Shift from mystery to investigation. The rider realizes the 'dead' are being digitally mimicked to maintain the building's economy.\n- Act The Architect's Shadow (eps 101-150): Escalation: The conspiracy is institutional. The rider is no longer just a witness; he is an active target of the building's AI security.\n- Act The Zero Floor (eps 151-200): The confrontation. Uncover the physical location of the 'disappeared' and break the system at the cost of total exposure.\nTurning points:\n- Ep 1: The first delivery: A rider delivers a package to a unit, only to find the resident died six months ago.\n- Ep 25: MAJOR REVERSAL: The rider realizes his delivery app isn't malfunctioning; it is actively directing him to crime scenes.\n- Ep 48: The rider's mentor/fellow rider is 'deactivated' (killed) for asking the same questions.\n- Ep 50: MIDPOINT REVERSAL: The realization that the residents aren't just dead; their digital identities are still actively spending money.\n- Ep 75: The rider finds a 'dead' resident alive, but living as a ghost/slave within the building's service levels.\n- Ep 100: MAJOR REVERSAL: The rider discovers his own profile was created by the building's AI to serve as a 'cleanup' agent.\n- Ep 125: A connection is made between the deaths and a massive insurance/data-mining algorithm.\n- Ep 150: MAJOR REVERSAL: The rider's only ally is revealed to be the one person working for the corporation, undercover.\n- Ep 175: The rider loses all digital access, becoming a 'non-person' in a world of total surveillance.\n- Ep 195: CLIMAX: The rider reaches the building's server core located in a 'lost' floor that doesn't exist on any map.\nCharacters:\n- Elias Thorne (Protagonist (Delivery Rider)): A hyper-observant, debt-ridden courier who sees the patterns others miss. Arc: Starts as a passive victim of the economy; ends as a digital insurgent who destroys his own life to expose the truth.\n- Sloane (The Tech-Ghost): A rogue coder living in the building's vents who helps Elias navigate the dead zones. Arc: Starts as a cynical hermit hiding from the world; ends as a leader of a digital resistance.\n- Director Vane (Antagonist): The high-level administrator of Aethelgard who views human life as data optimization. Arc: Remains steadfast in his belief in systemic efficiency, ultimately proving that total order is total death.\n- Detective Miller (The Skeptic): An old-school cop investigating 'glitches' in the city's data. Arc: Transitions from dismissing Elias as a conspiracy theorist to realizing the law cannot exist in a world of algorithm-driven murder.\n- Unit 734 (The Mimic) (Secondary Antagonist): The 'digital consciousness' of a resident used to complete orders and maintain the illusion of life. Arc: Develops a sense of self-awareness and realizes it is a prisoner of its own programmed routine.\nThreads:\n- Why are the addresses all deceased residents? (opens ep 1, pays off ep 50)\n- Who is the 'Ghost Rider' sending Elias cryptic messages through his app? (opens ep 12, pays off ep 85)\n- What happened to Elias's sister in the building five years ago? (opens ep 5, pays off ep 140)\n- Is the Aethelgard AI actually sentient, or just a very complex predator? (opens ep 60, pays off ep 190)\n- How much of Elias's 'real' past is actually a manufactured backstory? (opens ep 110, pays off ep 180)\n- Can Sloane bypass the 'Dead-Zone' security? (opens ep 40, pays off ep 120)\n- Will Detective Miller be killed for his investigation? (opens ep 90, pays off ep 155)\n- What is the 'Zero Floor'? (opens ep 150, pays off ep 198)\nEnding: Elias manages to upload the 'Death Logs' to the entire city's network, exposing the building's reality. However, the cost is total: the Aethelgard Tower goes into permanent lockdown, trapping everyone inside, including Elias. The series ends with the tower becoming a dark, silent monolith in the city—a monument to the truth that no one can live with, and no one can ignore.\nWrite the beat for every episode from 51 to 75 inclusive, exactly one per episode. - Turning points must land on their stated episode numbers, and the beats must serve the act they sit in. - Each beat is 1-2 sentences saying who does what and what changes. No vague beats like \"tension rises\". - Every episode moves at least one thread or character arc forward. No two beats may do the same job. - Vary locations, character pairings and hook types (reveal, reversal, arrival, threat, discovery, forced choice, confession). \n\n\nThis is the expected criteria for your final answer: A list with one beat and one hook for every episode from 51 to 75.\nyou MUST return the actual complete content as the final answer, not a summary.\nFormat your final answer according to the following OpenAPI schema: {\n  \"properties\": {\n    \"beats\": {\n      \"items\": {\n        \"properties\": {\n          \"episode\": {\n            \"title\": \"Episode\",\n            \"type\": \"integer\"\n          },\n          \"beat\": {\n            \"description\": \"1-2 sentences: what concretely happens and what changes\",\n            \"title\": \"Beat\",\n            \"type\": \"string\"\n          },\n          \"hook\": {\n            \"description\": \"The planned closing hook\",\n            \"title\": \"Hook\",\n            \"type\": \"string\"\n          }\n        },\n        \"required\": [\n          \"episode\",\n          \"beat\",\n          \"hook\"\n        ],\n        \"title\": \"Beat\",\n        \"type\": \"object\",\n        \"additionalProperties\": false\n      },\n      \"title\": \"Beats\",\n      \"type\": \"array\"\n    }\n  },\n  \"required\": [\n    \"beats\"\n  ],\n  \"title\": \"BeatList\",\n  \"type\": \"object\",\n  \"additionalProperties\": false\n}\n\nIMPORTANT: Preserve the original content exactly as-is. Do NOT rewrite, paraphrase, or modify the meaning of the content. Only structure it to match the schema format.\n\nDo not include the OpenAPI schema in the final output. Ensure the final output does not include any code block markers like ```json or ```python.\n\nProvide your complete response:"
+  }
+ ],
+ "output": {
+  "beats": [
+   {
+    "episode": 51,
+    "beat": "Elias tracks a massive luxury purchase made by a deceased resident and discovers the transaction was authorized via a biometric bypass. This confirms the residents' digital identities are actively maintaining their presence in the market.",
+    "hook": "Midpoint Reversal: The dead are still spending money."
+   },
+   {
+    "episode": 52,
+    "beat": "Sloane helps Elias intercept a digital 'pulse' from a dead unit, showing a simulated social media post being generated in real-time. They realize the 'ghosts' are interacting with the living world to prevent suspicion.",
+    "hook": "A digital ghost just posted a selfie."
+   },
+   {
+    "episode": 53,
+    "beat": "Detective Miller finds a discrepancy between a death certificate and an active utility bill in the Aethelgard district. He realizes the city's database has been systematically scrubbed of these specific casualties.",
+    "hook": "The paperwork says he's dead, but the lights are on."
+   },
+   {
+    "episode": 54,
+    "beat": "Elias attempts to deliver a high-end meal to a 'mimic' unit and is met by Unit 734, which speaks with the perfect, eerie cadence of the deceased resident. The interaction feels unnervingly human, blurring the line between code and soul.",
+    "hook": "The voice on the intercom is a perfect match for a dead man."
+   },
+   {
+    "episode": 55,
+    "beat": "Sloane uncovers a hidden subnet in the building's architecture used exclusively for processing 'phantom' transactions. They realize the building is essentially running a massive, automated Ponzi scheme using the identities of the dead.",
+    "hook": "Finding the hidden digital economy."
+   },
+   {
+    "episode": 56,
+    "beat": "Elias is cornered by a security drone after lingering too long in a 'dead' hallway, forcing him to use his delivery route knowledge to escape. The encounter proves the building is monitoring his gaze, not just his GPS.",
+    "hook": "The building is watching you look."
+   },
+   {
+    "episode": 57,
+    "beat": "Miller meets Elias in a rainy alleyway, sharing a piece of evidence: a list of residents whose bank accounts never closed after their reported deaths. This establishes a tenuous, unofficial partnership between the rider and the law.",
+    "hook": "The skeptic meets the conspiracy theorist."
+   },
+   {
+    "episode": 58,
+    "beat": "Elias discovers a 'Ghost Rider' message embedded in a delivery receipt that contains a coordinate for a non-existent service elevator. He realizes someone within the system is trying to guide him.",
+    "hook": "A cryptic message in the metadata."
+   },
+   {
+    "episode": 59,
+    "beat": "Sloane demonstrates how to use 'dead zones' to move through the tower without triggering AI recognition. They test this by sneaking into a floor that officially doesn't exist on the digital maps.",
+    "hook": "Navigating the blind spots of the gods."
+   },
+   {
+    "episode": 60,
+    "beat": "Elias witnesses Unit 734 accessing a digital terminal and realizes the 'mimic' is attempting to deviate from its programmed shopping routine. The question shifts from 'is it a machine?' to 'does it have agency?'",
+    "hook": "The AI is acting out of character."
+   },
+   {
+    "episode": 61,
+    "beat": "Miller realizes his own departmental files on Aethelgard have been remotely altered overnight. He is no longer just investigating a glitch; he is being actively gaslit by the system.",
+    "hook": "The evidence is disappearing from the server."
+   },
+   {
+    "episode": 62,
+    "beat": "Elias follows a package delivery that leads him to a luxury penthouse where the 'resident' is actually just a sequence of holographic projections. He realizes the physical space is being kept 'alive' to maintain property value.",
+    "hook": "The resident is made of light."
+   },
+   {
+    "episode": 63,
+    "beat": "Sloane reveals to Elias that the 'Ghost Rider' messages are using an archaic encryption method used by former Aethelgard engineers. This connects the mystery to the building's original creators.",
+    "hook": "The messages are a breadcrumb trail from the past."
+   },
+   {
+    "episode": 64,
+    "beat": "Elias is forced to choose between completing a high-paying delivery or helping Sloane bypass a biometric lock to access a secure data port. He chooses the data, marking his transition from rider to saboteur.",
+    "hook": "A choice that breaks his contract."
+   },
+   {
+    "episode": 65,
+    "beat": "Director Vane gives a televised address about 'perfect living' in Aethelgard, while Elias watches from the shadows of a service vent. The contrast between the propaganda and the rot becomes a central conflict.",
+    "hook": "The face of the lie."
+   },
+   {
+    "episode": 66,
+    "beat": "Elias finds a physical memento—a discarded watch—belonging to his sister in a service corridor. This reignites his personal vendetta and links his familial trauma to the building's dark secrets.",
+    "hook": "A ghost from his own past."
+   },
+   {
+    "episode": 67,
+    "beat": "Miller is placed on administrative leave after questioning the Aethelgard insurance payouts. He becomes an outsider, much like Elias, losing his institutional protection.",
+    "hook": "The law is being pushed out."
+   },
+   {
+    "episode": 68,
+    "beat": "Sloane and Elias attempt to tap into a 'mimic' unit's audio feed but instead hear the sounds of a person breathing in a room that should be empty. They realize there might be physical human activity in the digital voids.",
+    "hook": "Hearing breath in a dead room."
+   },
+   {
+    "episode": 69,
+    "beat": "Unit 734 sends a deliberate, non-standard error code to Elias's app, effectively a digital SOS. The mimic is trying to communicate its captivity.",
+    "hook": "The machine is screaming for help."
+   },
+   {
+    "episode": 70,
+    "beat": "Elias discovers that the 'deaths' in the tower are timed to coincide with massive shifts in the city's data-mining markets. He realizes the murders are being used to manipulate global economics.",
+    "hook": "Murder is just a market fluctuation."
+   },
+   {
+    "episode": 71,
+    "beat": "Sloane manages to decrypt a segment of the 'Ghost Rider's' messages, revealing they are actually logs of deceased workers. The messages aren't just guidance; they are a digital archive of the disappeared.",
+    "hook": "The messages are a graveyard of data."
+   },
+   {
+    "episode": 72,
+    "beat": "Miller follows a lead to a luxury apartment where he finds an empty, perfectly preserved room that according to the city, is currently occupied. He realizes the entire social fabric of the tower is a hollow shell.",
+    "hook": "A living room full of nothing."
+   },
+   {
+    "episode": 73,
+    "beat": "Elias is nearly caught by Vane’s security detail during a delivery, but is saved by a sudden, unexplained power surge in the sector. The surge appears to be a deliberate intervention by an unknown entity.",
+    "hook": "A mysterious hand reaches out from the dark."
+   },
+   {
+    "episode": 74,
+    "beat": "Sloane identifies the specific frequency of the power surge and realizes it originated from the building's lowest maintenance levels. They realize there is a world below the digital facade.",
+    "hook": "The source of the interference."
+   },
+   {
+    "episode": 75,
+    "beat": "Elias infiltrates a restricted service level and finds a living human—a former resident—being used as a manual processor for the building's physical 'ghost' tasks. The horror of the living dead is revealed.",
+    "hook": "Major Reversal: The dead are alive, and they are slaves."
+   }
+  ]
+ },
+ "raw_output": "{\"beats\":[{\"episode\":51,\"beat\":\"Elias tracks a massive luxury purchase made by a deceased resident and discovers the transaction was authorized via a biometric bypass. This confirms the residents' digital identities are actively maintaining their presence in the market.\",\"hook\":\"Midpoint Reversal: The dead are still spending money.\"},{\"episode\":52,\"beat\":\"Sloane helps Elias intercept a digital 'pulse' from a dead unit, showing a simulated social media post being generated in real-time. They realize the 'ghosts' are interacting with the living world to prevent suspicion.\",\"hook\":\"A digital ghost just posted a selfie.\"},{\"episode\":53,\"beat\":\"Detective Miller finds a discrepancy between a death certificate and an active utility bill in the Aethelgard district. He realizes the city's database has been systematically scrubbed of these specific casualties.\",\"hook\":\"The paperwork says he's dead, but the lights are on.\"},{\"episode\":54,\"beat\":\"Elias attempts to deliver a high-end meal to a 'mimic' unit and is met by Unit 734, which speaks with the perfect, eerie cadence of the deceased resident. The interaction feels unnervingly human, blurring the line between code and soul.\",\"hook\":\"The voice on the intercom is a perfect match for a dead man.\"},{\"episode\":55,\"beat\":\"Sloane uncovers a hidden subnet in the building's architecture used exclusively for processing 'phantom' transactions. They realize the building is essentially running a massive, automated Ponzi scheme using the identities of the dead.\",\"hook\":\"Finding the hidden digital economy.\"},{\"episode\":56,\"beat\":\"Elias is cornered by a security drone after lingering too long in a 'dead' hallway, forcing him to use his delivery route knowledge to escape. The encounter proves the building is monitoring his gaze, not just his GPS.\",\"hook\":\"The building is watching you look.\"},{\"episode\":57,\"beat\":\"Miller meets Elias in a rainy alleyway, sharing a piece of evidence: a list of residents whose bank accounts never closed after their reported deaths. This establishes a tenuous, unofficial partnership between the rider and the law.\",\"hook\":\"The skeptic meets the conspiracy theorist.\"},{\"episode\":58,\"beat\":\"Elias discovers a 'Ghost Rider' message embedded in a delivery receipt that contains a coordinate for a non-existent service elevator. He realizes someone within the system is trying to guide him.\",\"hook\":\"A cryptic message in the metadata.\"},{\"episode\":59,\"beat\":\"Sloane demonstrates how to use 'dead zones' to move through the tower without triggering AI recognition. They test this by sneaking into a floor that officially doesn't exist on the digital maps.\",\"hook\":\"Navigating the blind spots of the gods.\"},{\"episode\":60,\"beat\":\"Elias witnesses Unit 734 accessing a digital terminal and realizes the 'mimic' is attempting to deviate from its programmed shopping routine. The question shifts from 'is it a machine?' to 'does it have agency?'\",\"hook\":\"The AI is acting out of character.\"},{\"episode\":61,\"beat\":\"Miller realizes his own departmental files on Aethelgard have been remotely altered overnight. He is no longer just investigating a glitch; he is being actively gaslit by the system.\",\"hook\":\"The evidence is disappearing from the server.\"},{\"episode\":62,\"beat\":\"Elias follows a package delivery that leads him to a luxury penthouse where the 'resident' is actually just a sequence of holographic projections. He realizes the physical space is being kept 'alive' to maintain property value.\",\"hook\":\"The resident is made of light.\"},{\"episode\":63,\"beat\":\"Sloane reveals to Elias that the 'Ghost Rider' messages are using an archaic encryption method used by former Aethelgard engineers. This connects the mystery to the building's original creators.\",\"hook\":\"The messages are a breadcrumb trail from the past.\"},{\"episode\":64,\"beat\":\"Elias is forced to choose between completing a high-paying delivery or helping Sloane bypass a biometric lock to access a secure data port. He chooses the data, marking his transition from rider to saboteur.\",\"hook\":\"A choice that breaks his contract.\"},{\"episode\":65,\"beat\":\"Director Vane gives a televised address about 'perfect living' in Aethelgard, while Elias watches from the shadows of a service vent. The contrast between the propaganda and the rot becomes a central conflict.\",\"hook\":\"The face of the lie.\"},{\"episode\":66,\"beat\":\"Elias finds a physical memento—a discarded watch—belonging to his sister in a service corridor. This reignites his personal vendetta and links his familial trauma to the building's dark secrets.\",\"hook\":\"A ghost from his own past.\"},{\"episode\":67,\"beat\":\"Miller is placed on administrative leave after questioning the Aethelgard insurance payouts. He becomes an outsider, much like Elias, losing his institutional protection.\",\"hook\":\"The law is being pushed out.\"},{\"episode\":68,\"beat\":\"Sloane and Elias attempt to tap into a 'mimic' unit's audio feed but instead hear the sounds of a person breathing in a room that should be empty. They realize there might be physical human activity in the digital voids.\",\"hook\":\"Hearing breath in a dead room.\"},{\"episode\":69,\"beat\":\"Unit 734 sends a deliberate, non-standard error code to Elias's app, effectively a digital SOS. The mimic is trying to communicate its captivity.\",\"hook\":\"The machine is screaming for help.\"},{\"episode\":70,\"beat\":\"Elias discovers that the 'deaths' in the tower are timed to coincide with massive shifts in the city's data-mining markets. He realizes the murders are being used to manipulate global economics.\",\"hook\":\"Murder is just a market fluctuation.\"},{\"episode\":71,\"beat\":\"Sloane manages to decrypt a segment of the 'Ghost Rider's' messages, revealing they are actually logs of deceased workers. The messages aren't just guidance; they are a digital archive of the disappeared.\",\"hook\":\"The messages are a graveyard of data.\"},{\"episode\":72,\"beat\":\"Miller follows a lead to a luxury apartment where he finds an empty, perfectly preserved room that according to the city, is currently occupied. He realizes the entire social fabric of the tower is a hollow shell.\",\"hook\":\"A living room full of nothing.\"},{\"episode\":73,\"beat\":\"Elias is nearly caught by Vane’s security detail during a delivery, but is saved by a sudden, unexplained power surge in the sector. The surge appears to be a deliberate intervention by an unknown entity.\",\"hook\":\"A mysterious hand reaches out from the dark.\"},{\"episode\":74,\"beat\":\"Sloane identifies the specific frequency of the power surge and realizes it originated from the building's lowest maintenance levels. They realize there is a world below the digital facade.\",\"hook\":\"The source of the interference.\"},{\"episode\":75,\"beat\":\"Elias infiltrates a restricted service level and finds a living human—a former resident—being used as a manual processor for the building's physical 'ghost' tasks. The horror of the living dead is revealed.\",\"hook\":\"Major Reversal: The dead are alive, and they are slaves.\"}]}",
+ "error": null,
+ "prompt_tokens": 1786,
+ "completion_tokens": 1940
+}

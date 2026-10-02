@@ -1,0 +1,154 @@
+arc:
+  description: >
+    Premise: {premise}
+
+    Design the full arc of a {total}-episode serial built from this premise. Each episode is 400-700 words
+    and ends on a hook, so the arc has to sustain momentum for {total} short instalments.
+
+    - {acts} acts that cover episodes 1 to {total} with no gaps or overlaps. Each act must change the status quo and raise the stakes.
+    - {turning_points} turning points with exact episode numbers. Put major reversals near 25%, 50% and 75% of the run and the climax near the end.
+    - {characters} characters, each with a concrete arc (what they want, what they need, how they end up different). Include the forces working against the lead.
+    - {threads} long-running threads (mysteries, secrets, promises, relationships), each with the episode it opens and the episode it pays off. Stagger payoffs so every act resolves something.
+    - An ending that pays off the premise.
+
+    Prefer specific, surprising choices over genre defaults.
+    {note}
+  expected_output: The complete arc plan.
+
+beats:
+  description: >
+    Series plan:
+    {arc}
+
+    Write the beat for every episode from {start} to {end} inclusive, exactly one per episode.
+    - Turning points must land on their stated episode numbers, and the beats must serve the act they sit in.
+    - Each beat is 1-2 sentences saying who does what and what changes. No vague beats like "tension rises".
+    - Every episode moves at least one thread or character arc forward. No two beats may do the same job.
+    - Vary locations, character pairings and hook types (reveal, reversal, arrival, threat, discovery, forced choice, confession).
+    {note}
+  expected_output: A list with one beat and one hook for every episode from {start} to {end}.
+
+stopwords:
+  description: >
+    Premise: {premise}
+    Serial: "{title}". {logline}
+
+    The serial will be written in the same language as the premise above.
+    List {count} filler words of that language: the common function words (articles, pronouns, prepositions,
+    conjunctions, auxiliary verbs, basic adverbs such as "now" or "still") that carry no plot meaning.
+    A repetition checker will ignore these words when it compares episode summaries, so do not include
+    nouns, names, places, or verbs that describe events. All words lowercase, one word per item, no duplicates.
+  expected_output: The language name and the list of filler words.
+
+draft:
+  description: >
+    You are writing episode {n} of {total} of the serial "{title}".
+
+    {context}
+
+    Write episode {n} now.
+    - Length: {target} words of story prose. The hard limits are {min_words}-{max_words}.
+    - First line: "# Episode {n}: <episode title>", then the prose.
+    - Pick up from where the last scene ended. Respect every canon fact, each character's status and what they know, and the timeline.
+    - Deliver this episode's beat. Do not reach the later beats early.
+    - Follow every human direction.
+    - One or two scenes. Use concrete action, specific sensory detail and dialogue with subtext. No recap of earlier episodes, no moralising, no closing summary.
+    - Avoid stock phrases such as "a chill ran down", "little did", "heart pounding", "the air grew thick", "something shifted" and "just the beginning", and do not reuse any phrase listed under OVERUSED PHRASES.
+    - Use the "it wasn't just X, it was Y" or "not X, but Y" construction at most once. Use "said" for most dialogue tags and "whispered" at most once.
+    - End on a concrete turn in the final lines. Use a different hook type and a different sentence shape from the recent hooks listed above.
+  expected_output: Only the episode in markdown, meaning the title line followed by the prose. No notes or commentary.
+
+revise:
+  description: >
+    You are revising episode {n} of {total} of the serial "{title}".
+
+    {context}
+
+    Your draft:
+    ---
+    {draft}
+    ---
+
+    Fix these problems and keep everything else that works:
+    {issues}
+
+    The rules are unchanged: {target} words (hard limits {min_words}-{max_words}), the first line is "# Episode {n}: <episode title>", no phrase from OVERUSED PHRASES, the "it wasn't just X, it was Y" construction at most once,
+    respect canon and the human directions, and end on a strong, concrete hook.
+  expected_output: Only the revised episode in markdown.
+
+review:
+  description: >
+    You are the continuity editor for episode {n} of "{title}".
+
+    {context}
+
+    Earlier episodes most similar to this one (check them for a repeated beat):
+    {similar}
+
+    Episode {n} as written:
+    ---
+    {draft}
+    ---
+
+    Automatic checks flagged: {flags}
+
+    1. issues: list only concrete problems, or an empty list if there are none. Problems are: contradictions with canon facts, character status, relationships or the timeline;
+       a character knowing something they cannot know; a repeat of a beat from an earlier episode; an ignored human direction; the planned beat not delivered;
+       a missing or weak final hook; a phrase from OVERUSED PHRASES reused, or the "it wasn't just X, it was Y" construction used more than once.
+       Quote the offending words briefly. Apart from that repeated phrasing, do not flag matters of style or taste.
+    2. hook_score: rate the final hook from 1 to 10, where 10 means the reader must open the next episode.
+    3. directives_followed: false if any human direction is broken.
+    4. Record memory from the episode exactly as written:
+       summary = 2-3 sentences of events, not mood. hook = the final hook in one line. time = the in-story time at the end.
+       characters = everyone who appears or whose state changed (status, note on their current situation, goal and relationships; role only for first appearances).
+       facts = new durable facts later episodes must respect (names, places, objects, rules, injuries, secrets revealed, who knows what), tagged with lowercase names or "world".
+       threads_opened = new open questions or promises. threads_advanced and threads_resolved = ids of the listed open threads.
+  expected_output: The structured review.
+
+steer:
+  description: >
+    The serial "{title}" is at episode {n} of {total}. A human gave this note:
+    "{feedback}"
+
+    Current human directions (id: text):
+    {directives}
+
+    Characters:
+    {characters}
+
+    Upcoming beats:
+    {beats}
+
+    1. directive: rewrite the note as one precise instruction for the writers. Set permanent to true if it should govern all future episodes,
+       or false if it only concerns the episode being written now.
+    2. supersedes: the ids of any current directions this note replaces or contradicts.
+    3. beats: rewrite only the upcoming beats that must change so the note takes effect from episode {n} onward. Keep their episode numbers
+       and keep the arc's turning points reachable.
+  expected_output: The directive and the changed beats.
+
+chapter:
+  description: >
+    Compress these summaries of episodes {start}-{end} of "{title}" into one paragraph of at most {words} words.
+    Keep every event, death, revelation, relationship change and open question that a writer would need later.
+
+    {summaries}
+  expected_output: One paragraph.
+
+impact:
+  description: >
+    A human rewrote episode {n} of "{title}".
+    Old summary: {old}
+    New summary: {new}
+    New facts: {facts}
+
+    Later episodes (number: summary):
+    {later}
+
+    change: one sentence on what the rewrite changes for the rest of the story.
+    conflicts: every later episode that now contradicts the rewritten episode, with a one-line reason each. Return an empty list if there are none.
+  expected_output: The change and the list of conflicts.
+
+check:
+  description: >
+    Connection check. Return ok as true and word as "ready".
+  expected_output: ok and word.
